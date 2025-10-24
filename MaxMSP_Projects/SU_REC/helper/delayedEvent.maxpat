@@ -10,9 +10,21 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 119.0, 1000.0, 755.0 ],
+		"rect" : [ 1726.0, 139.0, 1652.0, 1319.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-4",
+					"index" : 3,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 619.0, 1166.0, 59.0, 59.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-87",
 					"maxclass" : "message",
@@ -20,7 +32,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 568.0, 1122.0, 50.0, 22.0 ],
-					"text" : "0"
+					"text" : "3"
 				}
 
 			}
@@ -28,7 +40,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-85",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -41,7 +53,7 @@
 					"comment" : "delayedBang: set delayedMessage",
 					"hint" : "globalDelay value is a numberical value (in milliseconds) that delays any preset by a set amount.\n\nE.g., if PRESET 3 has a delayValue of 1000, and globalDelay=1500, total delayTime will be 2500ms before the Bang.\n\n",
 					"id" : "obj-84",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -72,7 +84,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 323.0, 239.0, 127.0, 29.0 ],
+					"patching_rect" : [ 323.0, 167.5, 127.0, 29.0 ],
 					"text" : "TRIGGER \nSELECTION",
 					"textjustification" : 1
 				}
@@ -238,7 +250,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-62",
-					"index" : 0,
+					"index" : 5,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -312,7 +324,7 @@
 				"box" : 				{
 					"comment" : "delayBang: get globalDelay value (int)",
 					"id" : "obj-43",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -325,7 +337,7 @@
 					"comment" : "delayBang: set globalDelay value (int)",
 					"hint" : "globalDelay value is a numberical value (in milliseconds) that delays any preset by a set amount.\n\nE.g., if PRESET 3 has a delayValue of 1000, and globalDelay=1500, total delayTime will be 2500ms before the Bang.\n\n",
 					"id" : "obj-42",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -387,7 +399,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -399,7 +411,7 @@
 				"box" : 				{
 					"comment" : "delayBang: set presets (list of 9 'ms' values) [message ]/ [bang] shows output",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -412,24 +424,12 @@
 				"box" : 				{
 					"comment" : "delayBang: set PRESET as [message] (acceptable values: 0-9), click to trigger delayedBang.",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 355.0, 270.0, 63.0, 63.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-192",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 322.0, 307.0, 29.5, 22.0 ],
-					"text" : "1"
+					"patching_rect" : [ 355.0, 198.5, 63.0, 63.0 ]
 				}
 
 			}
@@ -501,7 +501,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 432.0, 969.0, 50.0, 22.0 ]
+					"patching_rect" : [ 350.881723821163177, 977.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -524,8 +524,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 331.0, 969.0, 94.0, 22.0 ],
-					"text" : "2.999"
+					"patching_rect" : [ 350.881723821163177, 1001.0, 94.0, 22.0 ],
+					"text" : "1.999102"
 				}
 
 			}
@@ -1012,6 +1012,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-143", 0 ],
+					"order" : 2,
+					"source" : [ "obj-137", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"midpoints" : [ 340.5, 1156.13671875, 628.5, 1156.13671875 ],
 					"order" : 0,
 					"source" : [ "obj-137", 0 ]
 				}
@@ -1223,13 +1232,6 @@
 					"midpoints" : [ 568.5, 192.5, 1152.5, 192.5 ],
 					"order" : 0,
 					"source" : [ "obj-188", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-99", 0 ],
-					"source" : [ "obj-192", 0 ]
 				}
 
 			}
@@ -1485,9 +1487,7 @@
 
 			}
  ],
-		"originid" : "pat-563",
-		"dependency_cache" : [  ],
-		"autosave" : 0
+		"originid" : "pat-1030"
 	}
 
 }
