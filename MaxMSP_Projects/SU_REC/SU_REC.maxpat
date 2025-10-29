@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1718.0, 87.0, 808.0, 1319.0 ],
+		"rect" : [ 34.0, 87.0, 1652.0, 1319.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
@@ -358,7 +358,6 @@
 						"classnamespace" : "box",
 						"rect" : [ 34.0, 87.0, 1212.0, 1319.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-45",
@@ -379,7 +378,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 551.546424627304077, 1546.391844749450684, 115.0, 22.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Recording Stopped."
 								}
 
@@ -455,7 +453,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 248.461110830307007, 194.526321887969971, 163.0, 33.0 ],
-									"presentation_linecount" : 2,
 									"text" : "1: Starts Recording\n    in given fullFilePath",
 									"textcolor" : [ 0.850980392156863, 0.850980392156863, 0.850980392156863, 0.6 ]
 								}
@@ -483,7 +480,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 381.443321704864502, 1734.020721912384033, 55.381620526313782, 40.0 ],
-									"presentation_linecount" : 3,
 									"text" : "FILE\nPATH\n[message]",
 									"textjustification" : 1
 								}
@@ -499,7 +495,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 464.948481321334839, 1734.020721912384033, 55.381620526313782, 118.0 ],
-									"presentation_linecount" : 9,
 									"text" : "REC\nTOGGLE\n[1 / 0]\n\n\n\n\n\n\n",
 									"textjustification" : 1
 								}
@@ -515,7 +510,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 674.226844310760498, 1734.020721912384033, 55.381620526313782, 40.0 ],
-									"presentation_linecount" : 3,
 									"text" : "OUTPUT\nLOGS\n[message]",
 									"textjustification" : 1
 								}
@@ -529,7 +523,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 43.266307592391968, 1255.168819427490234, 123.42342334985733, 47.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Sned results\nbased on above Outputs"
 								}
 
@@ -601,8 +594,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 604.500067710876465, 844.210556507110596, 160.0, 100.0 ],
-									"presentation_linecount" : 7,
+									"patching_rect" : [ 604.500067710876465, 844.210556507110596, 163.0, 100.0 ],
 									"text" : "This node.script needs to be running for the process to work. \n\nClick \"script start\" above it debug tools doesn't show \"Process Running\"",
 									"textcolor" : [ 0.850980392156863, 0.850980392156863, 0.850980392156863, 0.6 ]
 								}
@@ -754,7 +746,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 41.96760630607605, 500.623372077941895, 167.0, 87.0 ],
-									"presentation_linecount" : 6,
 									"text" : "Checks if file already exists \nand if file is of valid format\n\nOutputs `1 <file>` if  allOK\nOutputs `0` if file exists in path or other errors exist"
 								}
 
@@ -918,7 +909,7 @@
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 322.487084150314331, 542.857137680053711, 261.691349923610687, 305.682164788246155 ],
+									"patching_rect" : [ 322.487084150314331, 542.857137680053711, 400.0, 220.0 ],
 									"viewvisibility" : 1
 								}
 
@@ -986,6 +977,8 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
+										"node_bin_path" : "",
+										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -1947,9 +1940,8 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 500.0, 1546.0, 832.0, 1029.0 ],
+						"rect" : [ 134.0, 159.0, 832.0, 1029.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-81",
@@ -2019,7 +2011,7 @@
 
 									}
 ,
-									"text" : "current_take 10",
+									"text" : "current_take 1",
 									"textcolor" : [ 0.776470588235294, 0.776470588235294, 0.776470588235294, 1.0 ]
 								}
 
@@ -2095,7 +2087,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 339.320652484893799, 1143.902466297149658, 411.834330081939697, 22.0 ],
-									"text" : "~/Downloads/r2-anechoic_s01r10.wav"
+									"text" : "~/Downloads/r2-anechoic_s01r01.wav"
 								}
 
 							}
@@ -2429,7 +2421,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 530.496180295944214, 1001.829292178153992, 117.391303718090057, 22.0 ],
-									"text" : "\"10\""
+									"text" : "\"01\""
 								}
 
 							}
@@ -2718,9 +2710,9 @@
 									"presentation_rect" : [ 627.976184487342834, 624.40475594997406, 100.0, 22.0 ],
 									"restore" : [ 										{
 											"rec_dir" : "~/Downloads/",
-											"current_take" : 10,
+											"current_take" : 1,
 											"filename" : "r2-anechoic_s01r",
-											"fullFilePath" : "~/Downloads/r2-anechoic_s01r10.wav"
+											"fullFilePath" : "~/Downloads/r2-anechoic_s01r01.wav"
 										}
  ],
 									"saved_object_attributes" : 									{
@@ -4295,16 +4287,6 @@
 			"obj-287" : [ "live.gain~", "OUT MON", 0 ],
 			"obj-5::obj-23::obj-55" : [ "live.gain~[6]", "live.gain~[6]", 0 ],
 			"obj-60" : [ "live.gain~[13]", "6", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-					"buttons" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
 			"inherited_shortname" : 1
 		}
 ,
@@ -4324,6 +4306,13 @@
 			}
 , 			{
 				"name" : "chirpy.maxpat",
+				"bootpath" : "~/Documents/MaxMSP Projects/MaxMSP_Projects/SU_REC/helper",
+				"patcherrelativepath" : "./helper",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "datetime.maxpat",
 				"bootpath" : "~/Documents/MaxMSP Projects/MaxMSP_Projects/SU_REC/helper",
 				"patcherrelativepath" : "./helper",
 				"type" : "JSON",
