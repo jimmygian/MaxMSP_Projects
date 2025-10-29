@@ -8,10 +8,6 @@ function checkFileExists(filePath) {
 
     // Get current working directory
     const cwd = process.cwd();
-    // // change dir to ~
-    // process.chdir(os.homedir());
-    // maxApi.post(`Changing directory to: ${os.homedir()}`);
-
 
     // Remove "~/" if present
     if (filePath.startsWith('~/')) {
@@ -23,16 +19,15 @@ function checkFileExists(filePath) {
     }
 
     // Check if the file exists
+	maxApi.post(`Checking file: ${filePath}`);
     try {
-        maxApi.post(`Checking file: ${filePath}`);
-
         // Check if the file exists
         if (fs.existsSync(filePath)) {
             maxApi.post(`File exists: ${filePath}`);
-            maxApi.outlet(1); // File exists
+            maxApi.outlet(0, filePath); // File exists
         } else {
             maxApi.post(`File does not exist: ${filePath}`);
-            maxApi.outlet(0); // File does not exist
+            maxApi.outlet(1, filePath); // File does not exist
         }
 
     } catch (error) {
@@ -52,4 +47,11 @@ function checkFileExists(filePath) {
 // Add a handler for the 'check' message
 maxApi.addHandler('check', (filePath) => {
     checkFileExists(filePath);
+});
+
+maxApi.addHandler(maxApi.MESSAGE_TYPES.MESSAGE, (path) => {
+    if (typeof path !== 'string') {
+        maxApi.post('Invalid argument type. Expected a string.');
+        return;
+    }
 });

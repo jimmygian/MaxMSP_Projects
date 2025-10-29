@@ -4,17 +4,66 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 2,
+			"revision" : 9,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1726.0, 139.0, 1652.0, 1319.0 ],
+		"rect" : [ 790.0, 100.0, 688.0, 848.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
-					"comment" : "",
+					"id" : "obj-16",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 681.5, 1140.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-233",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 681.5, 1113.0, 85.0, 22.0 ],
+					"style" : "receiveWirelessly",
+					"text" : "receive trigger"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-208",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 376.0, 273.5, 72.0, 22.0 ],
+					"style" : "sendWirelessly",
+					"text" : "send trigger"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "delayedEvent: Sends Instant [BANG]",
+					"id" : "obj-5",
+					"index" : 4,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 680.0, 1166.0, 59.0, 59.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "delayedEvent: Counts delay before bang [float]",
 					"id" : "obj-4",
 					"index" : 3,
 					"maxclass" : "outlet",
@@ -38,7 +87,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "delayedEvent: Sends delayed [MESSAGE]",
 					"id" : "obj-85",
 					"index" : 2,
 					"maxclass" : "outlet",
@@ -152,7 +201,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 618.0, 719.0, 127.0, 40.0 ],
+					"patching_rect" : [ 719.16666567325592, 733.333355188369751, 127.0, 40.0 ],
 					"text" : "GLOBAL DELAY\nformated output \n(text)",
 					"textjustification" : 1
 				}
@@ -165,7 +214,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 714.0, 658.0, 143.0, 18.0 ],
+					"patching_rect" : [ 815.16666853427887, 672.000020027160645, 143.0, 18.0 ],
 					"text" : "sends formatted output as text",
 					"textcolor" : [ 0.556862745098039, 0.537254901960784, 0.537254901960784, 1.0 ]
 				}
@@ -192,7 +241,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 652.0, 624.0, 225.0, 22.0 ],
+					"patching_rect" : [ 752.5, 637.333352327346802, 225.0, 22.0 ],
 					"text" : "combine Global Delay: X ms @triggers 2"
 				}
 
@@ -204,7 +253,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 652.0, 563.0, 54.0, 22.0 ],
+					"patching_rect" : [ 651.166663646697998, 576.000017166137695, 54.0, 22.0 ],
 					"text" : "sel bang"
 				}
 
@@ -250,7 +299,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-62",
-					"index" : 5,
+					"index" : 6,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -324,11 +373,11 @@
 				"box" : 				{
 					"comment" : "delayBang: get globalDelay value (int)",
 					"id" : "obj-43",
-					"index" : 4,
+					"index" : 5,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 652.0, 658.0, 59.0, 59.0 ]
+					"patching_rect" : [ 752.5, 672.000020027160645, 59.0, 59.0 ]
 				}
 
 			}
@@ -397,7 +446,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "delayedEvent: Sends Delayed [BANG]",
 					"id" : "obj-3",
 					"index" : 1,
 					"maxclass" : "outlet",
@@ -409,7 +458,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "delayBang: set presets (list of 9 'ms' values) [message ]/ [bang] shows output",
+					"comment" : "delayedEvent: set presets (list of 9 'ms' values) [message ]/ [bang] shows output",
 					"id" : "obj-2",
 					"index" : 4,
 					"maxclass" : "inlet",
@@ -422,7 +471,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "delayBang: set PRESET as [message] (acceptable values: 0-9), click to trigger delayedBang.",
+					"comment" : "delayedEvent: 0-9 [message] for triggering presets",
 					"id" : "obj-1",
 					"index" : 1,
 					"maxclass" : "inlet",
@@ -525,7 +574,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 350.881723821163177, 1001.0, 94.0, 22.0 ],
-					"text" : "1.999102"
+					"text" : "1.999"
 				}
 
 			}
@@ -731,7 +780,16 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-208", 0 ],
+					"order" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-99", 0 ],
+					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -1076,6 +1134,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-121", 1 ],
 					"order" : 1,
 					"source" : [ "obj-171", 0 ]
@@ -1244,6 +1309,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"source" : [ "obj-233", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
 					"source" : [ "obj-31", 0 ]
 				}
@@ -1348,7 +1420,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 1 ],
-					"midpoints" : [ 696.5, 594.5, 425.5, 594.5 ],
+					"midpoints" : [ 695.666663646697998, 594.5, 425.5, 594.5 ],
 					"order" : 1,
 					"source" : [ "obj-68", 1 ]
 				}
@@ -1357,7 +1429,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-69", 2 ],
-					"midpoints" : [ 696.5, 596.53515625, 798.833333333333371, 596.53515625 ],
+					"midpoints" : [ 695.666663646697998, 609.868511438369751, 899.333333333333371, 609.868511438369751 ],
 					"order" : 0,
 					"source" : [ "obj-68", 1 ]
 				}
@@ -1487,7 +1559,30 @@
 
 			}
  ],
-		"originid" : "pat-1030"
+		"styles" : [ 			{
+				"name" : "receiveWireless",
+				"default" : 				{
+					"bgcolor" : [ 0.545098039215686, 0.176470588235294, 0.176470588235294, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "receiveWirelessly",
+				"parentstyle" : "receiveWireless",
+				"multi" : 0
+			}
+, 			{
+				"name" : "sendWirelessly",
+				"default" : 				{
+					"bgcolor" : [ 0.250980392156863, 0.203921568627451, 0.937254901960784, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+ ]
 	}
 
 }
