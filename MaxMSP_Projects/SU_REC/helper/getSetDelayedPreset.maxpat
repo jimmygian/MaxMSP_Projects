@@ -14,6 +14,134 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-28",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1247.0, 497.0, 117.0, 22.0 ],
+					"text" : "anechoic"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1247.0, 454.0, 89.0, 22.0 ],
+					"text" : "string.tosymbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "`getSetDelayedEventPreset`:  Get preset delay (ms)  [number]",
+					"id" : "obj-7",
+					"index" : 3,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1247.0, 543.0, 51.0, 51.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 1181.0, 274.0, 29.5, 22.0 ],
+					"text" : "t b l"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1181.0, 255.0, 71.0, 22.0 ],
+					"text" : "fromsymbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1181.0, 331.0, 284.0, 22.0 ],
+					"text" : "get presets[0]::preset_name"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "newobj",
+					"numinlets" : 7,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1181.0, 207.0, 330.0, 22.0 ],
+					"text" : "combine get \" \" presets [ num ] ::preset_name @triggers -1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1247.0, 377.0, 39.0, 22.0 ],
+					"presentation_linecount" : 2,
+					"text" : "$2 $3"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1247.0, 416.0, 117.0, 22.0 ],
+					"text" : "string u859007958"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 5,
+					"outlettype" : [ "dictionary", "", "", "", "" ],
+					"patching_rect" : [ 1181.0, 353.0, 284.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"legacy" : 0,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict delayedEventPresets"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-20",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -76,7 +204,7 @@
 				"box" : 				{
 					"comment" : "`getSetDelayedEventPreset`:  Get preset name [message]",
 					"id" : "obj-15",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -186,11 +314,11 @@
 				"box" : 				{
 					"comment" : "`getSetDelayedEventPreset`: Store new delay [bang]",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 1015.492971062660217, 628.16902232170105, 50.0, 50.0 ]
 				}
 
@@ -199,7 +327,7 @@
 				"box" : 				{
 					"comment" : "`getSetDelayedEventPreset`:  Get preset delay (ms)  [number]",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -211,7 +339,7 @@
 				"box" : 				{
 					"comment" : "`getSetDelayedEventPreset`:  Set delay (ms) for chosen preset list element  [number]",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -224,7 +352,7 @@
 				"box" : 				{
 					"comment" : "`getSetDelayedEventPreset`:  Choose preset list element  [number]",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -412,7 +540,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-112", 4 ],
 					"midpoints" : [ 279.5, 166.0625, 527.5, 166.0625 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -421,7 +549,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-116", 4 ],
 					"midpoints" : [ 279.5, 148.078911004588008, 818.64789617061615, 148.078911004588008 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -430,7 +558,15 @@
 				"patchline" : 				{
 					"destination" : [ "obj-16", 4 ],
 					"midpoints" : [ 279.5, 166.0, 210.833333333333343, 166.0 ],
-					"order" : 2,
+					"order" : 3,
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 4 ],
+					"order" : 0,
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -599,6 +735,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-111", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
@@ -621,6 +764,74 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 1 ],
+					"midpoints" : [ 1256.5, 407.5, 1354.5, 407.5 ],
+					"order" : 0,
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"order" : 1,
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-23", 0 ],
+					"source" : [ "obj-25", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 1 ],
+					"order" : 0,
+					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"order" : 1,
+					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-4", 0 ]
 				}
@@ -630,6 +841,21 @@
 				"patchline" : 				{
 					"destination" : [ "obj-120", 0 ],
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 1 ],
+					"midpoints" : [ 1201.0, 307.6640625, 1455.5, 307.6640625 ],
+					"source" : [ "obj-8", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
@@ -658,8 +884,6 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "sendWireless",
 				"default" : 				{
