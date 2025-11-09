@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1754.0, 87.0, 1225.0, 1319.0 ],
+		"rect" : [ 134.0, 100.0, 1225.0, 848.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
@@ -1264,7 +1264,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "chirpy: Send Color [panel]",
+					"comment" : "chirpy: Exort Chirpy Logs [dict]",
 					"id" : "obj-8",
 					"index" : 9,
 					"maxclass" : "outlet",
@@ -1740,7 +1740,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 485.0, 1628.0, 133.333335399627686, 22.0 ],
-									"text" : "array u493003388"
+									"text" : "array u636011640"
 								}
 
 							}
@@ -5222,7 +5222,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 548.254910469055176, 2043.137381553649902, 50.0, 22.0 ],
-									"text" : "2.873"
+									"text" : "3.392"
 								}
 
 							}
